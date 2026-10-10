@@ -57,3 +57,33 @@ rust -> (180,18,0); purple -> (60,0,90) at 100% brightness; white -> (255,200,25
 
 **Hardware notes (H618C):** green is heavily exaggerated on this strip, so warm
 colors use very little green. All colors are verified on hardware.
+
+## Per-segment control (ptReal)
+Each scheme has a `stripes` section: `colors` (the plane's `contrail_led`, repeated
+c1,c2,c3,... across segments), `segment_count` (default 15), and `gap_ms` (500).
+
+Send via LAN UDP port 4003:
+```
+{"msg":{"cmd":"ptReal","data":{"command":["<base64 of 20 bytes>"]}}}
+```
+Segment color packet (20 bytes):
+```
+33 05 15 01 R G B 00 00 00 00 00 <maskLo> <maskHi> 00 00 00 00 00 <xor>
+```
+- mask: bit0 = segment 1; all 15 segments = `ff 7f`.
+- last byte: XOR of the preceding 19 bytes.
+- e.g. all segments red: `33051501ff00000000000000ff7f00000000005d`.
+
+**Recipe (reliable):** paint ALL segments with the first color, wait ~0.5 s, then
+paint each further color on only its own segment mask, ~0.5 s apart. Sending
+color-on-odd and color-on-even back to back once produced gold instead of red
+(cause unconfirmed), so don't skip the all-segments first step.
+
+**Status:** verified on Mark's H618C: all-red followed by blue on even segments
+(mask `aa 2a`) gave clean red/blue alternation. The segment count (15) is an
+**unconfirmed assumption**; override with `--segments N`.
+
+```
+python3 play.py independence-one --ip 192.168.1.83 --stripes [--segments 15] [--dry-run]
+```
+`--dry-run` prints each packet's hex and the base64 JSON message.
