@@ -10,42 +10,41 @@
   ],
   "primary": {
     "color": {
-      "r": 243,
-      "g": 195,
-      "b": 23
+      "r": 255,
+      "g": 160,
+      "b": 0
     },
-    "hex": "#f3c317",
-    "brightness": 100
+    "brightness": 100,
+    "source_hex": "#f3c317"
   },
   "loop": true,
   "steps": [
     {
       "color": {
-        "r": 243,
-        "g": 195,
-        "b": 23
+        "r": 255,
+        "g": 160,
+        "b": 0
       },
-      "hex": "#f3c317",
       "brightness": 100,
-      "holdMs": 2500
+      "holdMs": 2500,
+      "source_hex": "#f3c317"
     },
     {
       "color": {
-        "r": 194,
-        "g": 43,
-        "b": 58
+        "r": 255,
+        "g": 0,
+        "b": 0
       },
-      "hex": "#c22b3a",
       "brightness": 100,
-      "holdMs": 2500
+      "holdMs": 2500,
+      "source_hex": "#c22b3a"
     },
     {
       "color": {
-        "r": 243,
-        "g": 195,
-        "b": 23
+        "r": 255,
+        "g": 160,
+        "b": 0
       },
-      "hex": "#f3c317",
       "brightness": 40,
       "holdMs": 1500,
       "pulse": {
@@ -53,7 +52,20 @@
         "toBrightness": 100,
         "periodMs": 3000,
         "count": 2
-      }
+      },
+      "source_hex": "#f3c317"
+    }
+  ],
+  "contrail_led": [
+    {
+      "r": 255,
+      "g": 160,
+      "b": 0
+    },
+    {
+      "r": 255,
+      "g": 0,
+      "b": 0
     }
   ]
 }

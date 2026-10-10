@@ -11,52 +11,51 @@
   ],
   "primary": {
     "color": {
-      "r": 194,
-      "g": 43,
-      "b": 58
+      "r": 255,
+      "g": 0,
+      "b": 0
     },
-    "hex": "#c22b3a",
-    "brightness": 100
+    "brightness": 100,
+    "source_hex": "#c22b3a"
   },
   "loop": true,
   "steps": [
     {
       "color": {
-        "r": 194,
-        "g": 43,
-        "b": 58
+        "r": 255,
+        "g": 0,
+        "b": 0
       },
-      "hex": "#c22b3a",
       "brightness": 100,
-      "holdMs": 2500
+      "holdMs": 2500,
+      "source_hex": "#c22b3a"
     },
     {
       "color": {
         "r": 255,
-        "g": 255,
+        "g": 200,
+        "b": 140
+      },
+      "brightness": 70,
+      "holdMs": 2500,
+      "source_hex": "#ffffff"
+    },
+    {
+      "color": {
+        "r": 0,
+        "g": 40,
         "b": 255
       },
-      "hex": "#ffffff",
-      "brightness": 70,
-      "holdMs": 2500
-    },
-    {
-      "color": {
-        "r": 27,
-        "g": 61,
-        "b": 143
-      },
-      "hex": "#1b3d8f",
       "brightness": 100,
-      "holdMs": 2500
+      "holdMs": 2500,
+      "source_hex": "#1b3d8f"
     },
     {
       "color": {
-        "r": 194,
-        "g": 43,
-        "b": 58
+        "r": 255,
+        "g": 0,
+        "b": 0
       },
-      "hex": "#c22b3a",
       "brightness": 40,
       "holdMs": 1500,
       "pulse": {
@@ -64,22 +63,40 @@
         "toBrightness": 100,
         "periodMs": 3000,
         "count": 2
-      }
+      },
+      "source_hex": "#c22b3a"
     },
     {
       "color": {
-        "r": 194,
-        "g": 43,
-        "b": 58
+        "r": 255,
+        "g": 0,
+        "b": 0
       },
-      "hex": "#c22b3a",
       "brightness": 100,
       "holdMs": 500,
       "strobe": {
         "count": 3,
         "onMs": 250,
         "offMs": 250
-      }
+      },
+      "source_hex": "#c22b3a"
+    }
+  ],
+  "contrail_led": [
+    {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    },
+    {
+      "r": 255,
+      "g": 200,
+      "b": 140
+    },
+    {
+      "r": 0,
+      "g": 40,
+      "b": 255
     }
   ]
 }

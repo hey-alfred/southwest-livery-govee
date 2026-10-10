@@ -31,3 +31,27 @@ python3 play.py liberty-one --ip 192.168.1.83 --primary  # static primary
 python3 play.py liberty-one --ip 192.168.1.83 --dry-run  # print commands only
 ```
 Warrior One (N8301J) wears standard Heart paint in the game, so use `heart`.
+
+## LED color tuning
+Screen hexes look wrong on the H618C: LEDs exaggerate small secondary channels
+(e.g. screen red #c22b3a shows as pinkish purple). Every `color` in a scheme is an
+LED-tuned rgb; the original game hex is kept in `source_hex` (and `contrail` /
+`contrail_led` list both). `play.py` sends only the LED values.
+
+Rules: zero minor channels; reds -> (255,0,0); blues -> pure-ish (navy (0,40,255),
+lighter (0,90,255)); gold/yellow -> (255,140,0)-style with low green and no blue;
+orange/rust -> (255,50,0); purple -> (120,0,255); white -> warm (255,200,140) at reduced brightness.
+
+| source_hex | LED rgb | note |
+|---|---|---|
+| #c22b3a, #d5152e | 255,0,0 | red |
+| #1b3d8f | 0,40,255 | navy |
+| #304cb2 | 0,60,255 | Heart bold blue |
+| #27488f | 0,70,255 | cobalt |
+| #2e5fa3 | 0,90,255 | flag blue |
+| #f9b612 | 255,140,0 | gold |
+| #f3c317 | 255,160,0 | zia yellow |
+| #d9a33c | 255,110,0 | desert gold (deeper) |
+| #b34726 | 255,50,0 | copper/rust |
+| #5b3b8f | 120,0,255 | purple |
+| #ffffff | 255,200,140 | warm white @70% |
