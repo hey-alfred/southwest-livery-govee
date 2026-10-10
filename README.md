@@ -39,8 +39,8 @@ LED-tuned rgb; the original game hex is kept in `source_hex` (and `contrail` /
 `contrail_led` list both). `play.py` sends only the LED values.
 
 Rules: zero minor channels; reds -> (255,0,0); blues -> pure-ish (navy (0,40,255),
-lighter (0,90,255)); gold/yellow -> (255,140,0)-style with low green and no blue;
-orange/rust -> (255,50,0); purple -> (120,0,255); white -> (255,255,255) at 70% brightness (verified in a red/white/blue test).
+lighter (0,90,255)); gold/yellow -> (255,55-60,0), amber (255,35,0), no blue;
+rust -> (180,18,0); purple -> (120,0,255); white -> (255,255,255) at 70% brightness (verified in a red/white/blue test).
 
 | source_hex | LED rgb | note |
 |---|---|---|
@@ -49,9 +49,14 @@ orange/rust -> (255,50,0); purple -> (120,0,255); white -> (255,255,255) at 70% 
 | #304cb2 | 0,60,255 | Heart bold blue |
 | #27488f | 0,70,255 | cobalt |
 | #2e5fa3 | 0,90,255 | flag blue |
-| #f9b612 | 255,140,0 | gold |
-| #f3c317 | 255,160,0 | zia yellow |
-| #d9a33c | 255,110,0 | desert gold (deeper) |
-| #b34726 | 255,50,0 | copper/rust |
+| #f9b612 | 255,55,0 | gold (hardware-tuned) |
+| #f3c317 | 255,60,0 | zia yellow (hardware-tuned) |
+| #d9a33c | 255,35,0 | desert gold amber (hardware-tuned) |
+| #b34726 | 180,18,0 | copper/rust, dimmer to stay distinct from amber (UNTESTED) |
 | #5b3b8f | 120,0,255 | purple |
 | #ffffff | 255,255,255 | white @70% |
+
+**Hardware notes (H618C):** green is heavily exaggerated on this strip, so warm
+colors use very little green. Red, white, and navy (0,40,255) are verified on
+hardware; gold/amber/yellow are hardware-tuned; copper/rust (180,18,0) and all
+other blues and purple are untested on hardware.
