@@ -40,7 +40,7 @@ LED-tuned rgb; the original game hex is kept in `source_hex` (and `contrail` /
 
 Rules: zero minor channels; reds -> (255,0,0); blues -> pure-ish (navy (0,40,255),
 lighter (0,90,255)); gold/yellow -> (255,140,0)-style with low green and no blue;
-orange/rust -> (255,50,0); purple -> (120,0,255); white -> warm (255,200,140) at reduced brightness.
+orange/rust -> (255,50,0); purple -> (120,0,255); white -> (255,255,255) at 70% brightness (verified in a red/white/blue test).
 
 | source_hex | LED rgb | note |
 |---|---|---|
@@ -54,4 +54,4 @@ orange/rust -> (255,50,0); purple -> (120,0,255); white -> warm (255,200,140) at
 | #d9a33c | 255,110,0 | desert gold (deeper) |
 | #b34726 | 255,50,0 | copper/rust |
 | #5b3b8f | 120,0,255 | purple |
-| #ffffff | 255,200,140 | warm white @70% |
+| #ffffff | 255,255,255 | white @70% |
