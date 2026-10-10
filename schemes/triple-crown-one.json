@@ -1,0 +1,59 @@
+{
+  "slug": "triple-crown-one",
+  "name": "Triple Crown One",
+  "registration": "N8681M",
+  "group": "specialty",
+  "source": "mark-winters/jaysplanes web/src/game/core/liveries.ts",
+  "contrail": [
+    "#f9b612",
+    "#304cb2"
+  ],
+  "primary": {
+    "color": {
+      "r": 249,
+      "g": 182,
+      "b": 18
+    },
+    "hex": "#f9b612",
+    "brightness": 100
+  },
+  "loop": true,
+  "steps": [
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 48,
+        "g": 76,
+        "b": 178
+      },
+      "hex": "#304cb2",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 40,
+      "holdMs": 1500,
+      "pulse": {
+        "type": "breathe",
+        "toBrightness": 100,
+        "periodMs": 3000,
+        "count": 2
+      }
+    }
+  ]
+}

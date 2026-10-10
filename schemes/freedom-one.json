@@ -1,0 +1,59 @@
+{
+  "slug": "freedom-one",
+  "name": "Freedom One",
+  "registration": "N500WR",
+  "group": "america",
+  "source": "mark-winters/jaysplanes web/src/game/core/liveries.ts",
+  "contrail": [
+    "#c22b3a",
+    "#1b3d8f"
+  ],
+  "primary": {
+    "color": {
+      "r": 194,
+      "g": 43,
+      "b": 58
+    },
+    "hex": "#c22b3a",
+    "brightness": 100
+  },
+  "loop": true,
+  "steps": [
+    {
+      "color": {
+        "r": 194,
+        "g": 43,
+        "b": 58
+      },
+      "hex": "#c22b3a",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 27,
+        "g": 61,
+        "b": 143
+      },
+      "hex": "#1b3d8f",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 194,
+        "g": 43,
+        "b": 58
+      },
+      "hex": "#c22b3a",
+      "brightness": 40,
+      "holdMs": 1500,
+      "pulse": {
+        "type": "breathe",
+        "toBrightness": 100,
+        "periodMs": 3000,
+        "count": 2
+      }
+    }
+  ]
+}

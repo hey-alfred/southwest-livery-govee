@@ -1,0 +1,85 @@
+{
+  "slug": "liberty-one",
+  "name": "Liberty One",
+  "registration": "N8719Q",
+  "group": "hero",
+  "source": "mark-winters/jaysplanes web/src/game/core/liveries.ts",
+  "contrail": [
+    "#f9b612",
+    "#c22b3a",
+    "#ffffff"
+  ],
+  "primary": {
+    "color": {
+      "r": 249,
+      "g": 182,
+      "b": 18
+    },
+    "hex": "#f9b612",
+    "brightness": 100
+  },
+  "loop": true,
+  "steps": [
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 194,
+        "g": 43,
+        "b": 58
+      },
+      "hex": "#c22b3a",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "hex": "#ffffff",
+      "brightness": 70,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 40,
+      "holdMs": 1500,
+      "pulse": {
+        "type": "breathe",
+        "toBrightness": 100,
+        "periodMs": 3000,
+        "count": 2
+      }
+    },
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 100,
+      "holdMs": 500,
+      "strobe": {
+        "count": 3,
+        "onMs": 250,
+        "offMs": 250
+      }
+    }
+  ]
+}

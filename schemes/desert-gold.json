@@ -1,0 +1,74 @@
+{
+  "slug": "desert-gold",
+  "name": "Desert Gold",
+  "registration": "N871HK",
+  "group": "hero",
+  "source": "mark-winters/jaysplanes web/src/game/core/liveries.ts",
+  "contrail": [
+    "#f9b612",
+    "#d9a33c"
+  ],
+  "primary": {
+    "color": {
+      "r": 249,
+      "g": 182,
+      "b": 18
+    },
+    "hex": "#f9b612",
+    "brightness": 100
+  },
+  "loop": true,
+  "steps": [
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 217,
+        "g": 163,
+        "b": 60
+      },
+      "hex": "#d9a33c",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 40,
+      "holdMs": 1500,
+      "pulse": {
+        "type": "breathe",
+        "toBrightness": 100,
+        "periodMs": 3000,
+        "count": 2
+      }
+    },
+    {
+      "color": {
+        "r": 249,
+        "g": 182,
+        "b": 18
+      },
+      "hex": "#f9b612",
+      "brightness": 100,
+      "holdMs": 500,
+      "strobe": {
+        "count": 3,
+        "onMs": 250,
+        "offMs": 250
+      }
+    }
+  ]
+}

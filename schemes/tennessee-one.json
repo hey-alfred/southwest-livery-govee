@@ -1,0 +1,59 @@
+{
+  "slug": "tennessee-one",
+  "name": "Tennessee One",
+  "registration": "N8555Z",
+  "group": "state",
+  "source": "mark-winters/jaysplanes web/src/game/core/liveries.ts",
+  "contrail": [
+    "#2e5fa3",
+    "#c22b3a"
+  ],
+  "primary": {
+    "color": {
+      "r": 46,
+      "g": 95,
+      "b": 163
+    },
+    "hex": "#2e5fa3",
+    "brightness": 100
+  },
+  "loop": true,
+  "steps": [
+    {
+      "color": {
+        "r": 46,
+        "g": 95,
+        "b": 163
+      },
+      "hex": "#2e5fa3",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 194,
+        "g": 43,
+        "b": 58
+      },
+      "hex": "#c22b3a",
+      "brightness": 100,
+      "holdMs": 2500
+    },
+    {
+      "color": {
+        "r": 46,
+        "g": 95,
+        "b": 163
+      },
+      "hex": "#2e5fa3",
+      "brightness": 40,
+      "holdMs": 1500,
+      "pulse": {
+        "type": "breathe",
+        "toBrightness": 100,
+        "periodMs": 3000,
+        "count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "device": "Govee H618C",
+  "planes": [
+    {
+      "slug": "heart",
+      "name": "Heart (standard livery; also Warrior One N8301J)",
+      "registration": null,
+      "group": "standard",
+      "contrail": [
+        "#d5152e",
+        "#f9b612",
+        "#304cb2"
+      ],
+      "file": "schemes/heart.json"
+    },
+    {
+      "slug": "desert-gold",
+      "name": "Desert Gold",
+      "registration": "N871HK",
+      "group": "hero",
+      "contrail": [
+        "#f9b612",
+        "#d9a33c"
+      ],
+      "file": "schemes/desert-gold.json"
+    },
+    {
+      "slug": "independence-one",
+      "name": "Independence One",
+      "registration": "N1776R",
+      "group": "hero",
+      "contrail": [
+        "#c22b3a",
+        "#ffffff",
+        "#1b3d8f"
+      ],
+      "file": "schemes/independence-one.json"
+    },
+    {
+      "slug": "liberty-one",
+      "name": "Liberty One",
+      "registration": "N8719Q",
+      "group": "hero",
+      "contrail": [
+        "#f9b612",
+        "#c22b3a",
+        "#ffffff"
+      ],
+      "file": "schemes/liberty-one.json"
+    },
+    {
+      "slug": "freedom-one",
+      "name": "Freedom One",
+      "registration": "N500WR",
+      "group": "america",
+      "contrail": [
+        "#c22b3a",
+        "#1b3d8f"
+      ],
+      "file": "schemes/freedom-one.json"
+    },
+    {
+      "slug": "california-one",
+      "name": "California One",
+      "registration": "N8653A",
+      "group": "state",
+      "contrail": [
+        "#c22b3a",
+        "#ffffff"
+      ],
+      "file": "schemes/california-one.json"
+    },
+    {
+      "slug": "colorado-one",
+      "name": "Colorado One",
+      "registration": "N8690A",
+      "group": "state",
+      "contrail": [
+        "#2e5fa3",
+        "#f9b612"
+      ],
+      "file": "schemes/colorado-one.json"
+    },
+    {
+      "slug": "illinois-one",
+      "name": "Illinois One",
+      "registration": "N8619F",
+      "group": "state",
+      "contrail": [
+        "#2e5fa3",
+        "#c22b3a"
+      ],
+      "file": "schemes/illinois-one.json"
+    },
+    {
+      "slug": "nevada-one",
+      "name": "Nevada One",
+      "registration": "N8646B",
+      "group": "state",
+      "contrail": [
+        "#27488f",
+        "#f9b612"
+      ],
+      "file": "schemes/nevada-one.json"
+    },
+    {
+      "slug": "maryland-one",
+      "name": "Maryland One",
+      "registration": "N214WN",
+      "group": "state",
+      "contrail": [
+        "#f9b612",
+        "#c22b3a"
+      ],
+      "file": "schemes/maryland-one.json"
+    },
+    {
+      "slug": "tennessee-one",
+      "name": "Tennessee One",
+      "registration": "N8555Z",
+      "group": "state",
+      "contrail": [
+        "#2e5fa3",
+        "#c22b3a"
+      ],
+      "file": "schemes/tennessee-one.json"
+    },
+    {
+      "slug": "florida-one",
+      "name": "Florida One",
+      "registration": "N945WN",
+      "group": "state",
+      "contrail": [
+        "#c22b3a",
+        "#ffffff"
+      ],
+      "file": "schemes/florida-one.json"
+    },
+    {
+      "slug": "louisiana-one",
+      "name": "Louisiana One",
+      "registration": "N8977G",
+      "group": "state",
+      "contrail": [
+        "#27488f",
+        "#f9b612"
+      ],
+      "file": "schemes/louisiana-one.json"
+    },
+    {
+      "slug": "new-mexico-one",
+      "name": "New Mexico One",
+      "registration": "N8655D",
+      "group": "state",
+      "contrail": [
+        "#f3c317",
+        "#c22b3a"
+      ],
+      "file": "schemes/new-mexico-one.json"
+    },
+    {
+      "slug": "lone-star-one",
+      "name": "Lone Star One",
+      "registration": "N8660A",
+      "group": "state",
+      "contrail": [
+        "#1b3d8f",
+        "#c22b3a"
+      ],
+      "file": "schemes/lone-star-one.json"
+    },
+    {
+      "slug": "arizona-one",
+      "name": "Arizona One",
+      "registration": "N955WN",
+      "group": "state",
+      "contrail": [
+        "#f9b612",
+        "#b34726"
+      ],
+      "file": "schemes/arizona-one.json"
+    },
+    {
+      "slug": "missouri-one",
+      "name": "Missouri One",
+      "registration": "N280WN",
+      "group": "state",
+      "contrail": [
+        "#c22b3a",
+        "#2e5fa3"
+      ],
+      "file": "schemes/missouri-one.json"
+    },
+    {
+      "slug": "imua-one",
+      "name": "Imua One",
+      "registration": "N8710M",
+      "group": "specialty",
+      "contrail": [
+        "#5b3b8f",
+        "#f9b612"
+      ],
+      "file": "schemes/imua-one.json"
+    },
+    {
+      "slug": "triple-crown-one",
+      "name": "Triple Crown One",
+      "registration": "N8681M",
+      "group": "specialty",
+      "contrail": [
+        "#f9b612",
+        "#304cb2"
+      ],
+      "file": "schemes/triple-crown-one.json"
+    }
+  ]
+}
