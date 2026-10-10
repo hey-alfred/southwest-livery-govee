@@ -49,12 +49,11 @@ rust -> (180,18,0); purple -> (60,0,90) at 100% brightness; white -> (255,200,25
 | #27488f | 0,80,255 | cobalt | verified |
 | #2e5fa3 | 0,200,255 | flag blue | verified |
 | #f9b612 | 255,55,0 | gold | verified |
-| #f3c317 | 255,60,0 | zia yellow | set near verified gold, not directly tested |
+| #f3c317 | 255,60,0 | zia yellow | verified |
 | #d9a33c | 255,35,0 | desert gold amber | verified |
 | #b34726 | 180,18,0 | copper/rust | verified |
 | #5b3b8f | 60,0,90 | purple @100% | verified |
 | #ffffff | 255,200,255 | white @70% | verified |
 
 **Hardware notes (H618C):** green is heavily exaggerated on this strip, so warm
-colors use very little green. All colors are verified on hardware except
-New Mexico yellow (255,60,0), which is set near verified gold but not directly tested.
+colors use very little green. All colors are verified on hardware.
