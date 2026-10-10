@@ -60,7 +60,7 @@ colors use very little green. All colors are verified on hardware.
 
 ## Per-segment control (ptReal)
 Each scheme has a `stripes` section: `colors` (the plane's `contrail_led`, repeated
-c1,c2,c3,... across segments), `segment_count` (default 15), and `gap_ms` (500).
+c1,c2,c3,... across segments), `segment_count` (15, verified), and `gap_ms` (500).
 
 Send via LAN UDP port 4003:
 ```
@@ -80,8 +80,13 @@ color-on-odd and color-on-even back to back once produced gold instead of red
 (cause unconfirmed), so don't skip the all-segments first step.
 
 **Status:** verified on Mark's H618C: all-red followed by blue on even segments
-(mask `aa 2a`) gave clean red/blue alternation. The segment count (15) is an
-**unconfirmed assumption**; override with `--segments N`.
+(mask `aa 2a`) gave clean red/blue alternation, and 3-color stripes were verified with
+Independence One (red all, white on 2,5,8,11,14, navy on 3,6,9,12,15). The H618C has
+**15 segments (verified)**, segment 1 at one end. `--segments N` remains for other strips.
+
+**White in stripes:** brightness is global in stripes mode (set from the primary), so
+white stripes use pre-dimmed (180,140,180) (~70% of (255,200,255)). Whole-strip steps
+still use (255,200,255) at 70% brightness.
 
 ```
 python3 play.py independence-one --ip 192.168.1.83 --stripes [--segments 15] [--dry-run]
